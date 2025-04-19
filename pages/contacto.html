@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/img/creative-computer-logo-template/6370560.jpg" type="image/x-icon"> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive-movile.css">
+    <link rel="stylesheet" href="../css/responvise-table.css">
+    <title>Contacto</title>
+</head>
+
+<body class="contacto">
+
+    <!-- Cabecera -->
+    <header class="header">
+
+        <!-- Títulos -->
+        <div class="sec1-header">
+            <h1 id="h1-header">Desarollo y programación</h1>
+            <h2 id="h2-header">Innovación y tecnología</h2>
+        </div>
+
+        <!-- Imagen logo y texto -->
+        <div class="sec2-header">
+            <img src="../src/img/creative-computer-logo-template/6370560.jpg" alt="mi logo">
+            <p id="p-header"></p>
+        </div>
+    </header>
+
+    <!-- Barra de navegador -->
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="quienes_somos.html">Quienes somos</a>
+            </li>
+
+            <!-- Desplegable -->
+            <li>
+                <a href="area_actuacion.html">Área de actuación</a>
+
+                <ul>
+                    <li>
+                        <a href="area_actuacion.html#dañamos">Desarrollo web</a>
+                    </li>
+
+                    <li>
+                        <a href="area_actuacion.html#robamos">Aplicaciones móviles</a>
+                    </li>
+
+                    <li>
+                        <a href="area_actuacion.html#nofunciona">Automatización y procesos</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- main | Compuesto por un formulario -->
+    <main class="main">
+        <section class="section1">
+            <article class="article">
+
+                <!-- Título de formulario -->
+                <div class="titulo-section">
+                    <h2>Hoja de Inscripción en los ciclos formativos de grado superior</h2>
+                </div>
+
+                <div class="text-section">
+
+                    <!-- Formulario -->
+                    <form action="">
+
+                         <!-- Datos personales -->
+                        <fieldset>
+                            <legend>Datos personales(*)</legend>
+
+                            <div class="div-input">
+                                <label for="apellido">Apellido*</label>
+                                <input type="text" name="apellido" id="apellido" required>
+                            </div>
+
+                            <div class="div-input">
+                                <label for="nombre">Nombre*</label>
+                                <input type="text" name="Nombre" id="Nombre" required>
+                            </div>
+
+                            <div class="div-input">
+                                <label for="dni">DNI*</label>
+                                <input type="text" name="dni" id="dni" required>
+                            </div>
+
+                            <div class="div-input">
+                                <label for="nacido">Nacido/a en*</label>
+                                <input type="text" name="nacido" id="nacido" required>
+                            </div>
+
+                            <div class="div-input">
+                                <label for="provincia">Provincia*</label>
+                                <select name="provincia" id="provincia" required>
+                                    <option value="valencia">Valencia</option>
+                                    <option value="Madrid">Madrid</option>
+                                    <option value="Asturias">Asturias</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                </select>
+                            </div>
+
+                            <div class="div-input">
+                                <label for="fnac">Fecha Nacimiento (dd/mm/aaaa)*</label>
+                                <input type="date" name="fnac" id="fnac" required>
+                            </div>
+
+                            <div class="div-input">
+                                <label for="direccion">Domicilio (Calle, pllaza y numero)*</label>
+                                <input type="text" name="direccion" id="direccion" required>
+                            </div>
+
+                            <div class="div-input">
+                                <label for="cp">CP*</label>
+                                <input type="text" name="cp" id="cp" required>
+                            </div>
+
+                            <div class="div-input">
+                                <label for="localidad">Localidad*</label>
+                                <input type="text" name="localidad" id="localidad" required>
+                            </div>
+
+                            <div class="div-input">
+                                <label for="tel">Telefono*</label>
+                                <input type="text" name="tel" id="tel" required>
+                            </div>
+                        </fieldset>
+
+                        <!-- Requisitos de acceso -->
+                        <fieldset>
+                            <legend>Requisitos de acceso</legend>
+
+                            <div class="div-input2">
+                                <input type="radio" name="directo" id="directo">
+                                <label for="directo">Directo</label>
+                            </div>
+
+                            <div class="div-input2">
+                                <input type="radio" name="Bachillerato" id="bachiller">
+                                <label for="bachiller">Bachillerato LOGSE. Modalidad</label>
+                                <input type="text" name="bachiller_1" id="bachiller_1">
+                            </div>
+
+                            <div class="div-input2">
+                                <input type="radio" name="Bachillerato" id="bachiller2">
+                                <label for="bachiller2">Bachillerato experimental</label>
+                            </div>
+
+                            <div class="div-input2">
+                                <input type="radio" name="Bachillerato" id="bachiller3">
+                                <label for="bachiller3">CPO. Opcion:</label>
+                                <input type="text" name="Bachillerato3_1" id="Bachillerato3_1">
+                            </div>
+
+                            <div class="div-input2">
+                                <input type="radio" name="Bachillerato" id="bachiller4">
+                                <label for="bachiller4">FP2</label>
+                            </div>
+
+                            <div class="div-input2">
+                                <input type="radio" name="Bachillerato1" id="bachiller5">
+                                <label for="bachiller5">otro (espesifique)</label>
+                                <input type="text" name="Bachillerato1" id="Bachillerato1">
+                            </div>
+
+                            <div class="div-input2">
+                                <input type="radio" name="directo" id="bachiller6">
+                                <label for="bachiller6">Mediante Prueba</label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Solicitud -->
+                        <fieldset>
+                            <legend>Solicitud</legend>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Sed, possimus sunt quisquam debitisnihil officiis expedita 
+                                sapiente blanditiis mollitia minus rerum. Necessitatibus est
+                                repudiandae aliquid eaque, corrupti in odit. Facilis.
+                            </p>
+                            
+                            <div class="div-input2">
+                                <label for="">Ciclo formativos</label>
+                                <select name="ciclos" id="ciclos">
+                                    <option value="opcion1">opcion1</option>
+                                    <option value="opcion2">opcion2</option>
+                                    <option value="opcion3">opcion3</option>
+                                    <option value="opcion4">opcion4</option>
+                                    <option value="opcion5">opcion5</option>
+                                    <option value="opcion6">opcion6</option>
+                                    <option value="opcion7">opcion7</option>
+                                    <option value="opcion8">opcion8</option>
+                                </select>
+                            </div>
+
+                            <div class="div-input3" >
+                                <div class="div-input">
+                                    <label for="ciclosformativos">ciclos formativos</label>
+                                    <input type="text" name="" id="">
+                                    <input type="text" name="" id="">
+                                </div>
+
+                                <div class="div-input">
+                                    <label for="ciclosformativos">Centro</label>
+                                    <input type="text" name="" id="">
+                                    <input type="text" name="" id="">
+                                </div>
+
+                                <div class="div-input">
+                                    <label for="ciclosformativos">Localidad</label>
+                                    <input type="text" name="" id="">
+                                    <input type="text" name="" id="">
+                                </div>
+                            </div>
+
+                            <div class="div-input2">
+                                <label for="modalidad">modalidad de horario especial (marque)</label>
+                                <input type="radio" name="modalidad" id="modalidad">
+                            </div>
+                        </fieldset>
+
+                        <!-- Documentación -->
+                        <fieldset>
+                            <legend>Documentacion presentada</legend>
+                            <div style="display: flex;">
+                                <div class="div-input2">
+                                    <input type="radio" name="certificados" id="fotodni">
+                                    <label for="fotodni">Fotocopia dni</label>
+                                </div>
+
+                                <div class="div-input2">
+                                    <input type="radio" name="certificados" id="certiaca">
+                                    <label for="fotodni">Certificado academico</label>
+                                </div>
+                            </div>
+
+                            <div class="div-input2">
+                                <input type="radio" name="certificados" id="">
+                                <label for="otroDoc">Otro documento (espesifique)</label>
+                                <input type="text" name="" id="">
+                            </div>
+                        </fieldset>
+
+                        <!-- Comunicación -->
+                        <fieldset>
+                            <legend>Comunicación</legend>
+                            <div>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                    Sequi recusandaeexercitationem animi cumque, quas vel 
+                                    maxime natus quod distinctio omnis. Praesentium,
+                                    alias ab. Iure sunt, fugiat nobis inventore in tempore?
+                                </p>
+                            </div>
+
+                            <div class="div-input3">
+                                <input type="text"> , <input type="text"> de <input type="text" name="" id=""> de
+                                <select name="algo" id="aglo">
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                </select>
+                            </div>
+
+                            <div style="display: flex; height: 150px; max-height: 150px; width: 100%;">
+                                <div
+                                    style="display: flex; flex-direction: column;justify-content: space-between;height: 100%; width: 50%;">
+                                    <span>La persona solicitante</span>
+                                    <span>firma</span>
+                                </div>
+
+                                <div style="width: 100%;">
+                                    <div
+                                        style="background-color: whitesmoke; color: black; height: 100%; width: auto; float: right;">
+                                        registro de entrada
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset style="border: 2px dotted;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ipsa officiis quidem, laboriosam eveniet quis soluta ad 
+                            aperiam vero sapiente optio et suscipit perspiciatis qui 
+                            facilis nisi.
+                        </fieldset>
+
+                        <h4 style="padding-top: 5px;">DIRECTOR/A O TITULAR DEL CENTRO</h4>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Aside | Compuesto por 3 artículos sobre noticias -->
+    <aside class="aside">
+
+        <!-- Primer artículo -->
+        <article class="article1">
+
+            <div class="inside-article">
+
+                <!-- Título -->
+                <div class="titulo-section">
+                    <h2>IA crea su propio lenguaje</h2>
+                </div>
+
+                <!-- Imagen -->
+                <div class="img-section">
+                    <img src="../src/img/img_seccion1.jpg"
+                        alt="imagen"/>
+                </div>
+
+                <!-- Texto -->
+                <div class="text-section">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum sed veritatis qui culpa sint consequatur voluptatem
+                        veniam minima numquam vero vel, quas doloribus quibusdam autem
+                        corrupti. Voluptatem fugit quaerat nulla? Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Voluptatum sed veritatis qui
+                        culpa sint consequatur voluptatem veniam minima numquam vero vel,
+                        quas doloribus
+                        <a href="#">Leer más</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Segundo artículo -->
+        <article class="article2">
+            <div class="inside-article">
+
+                <!-- Título -->
+                <div class="titulo-section">
+                    <h2>Editores de código controlados por voz</h2>
+                </div>
+
+                <!-- Imagen -->
+                <div class="img-section">
+                    <img src="../src/img/img_seccion1.jpg"
+                        alt="imagen" />
+                </div>
+
+                <!-- Texto -->
+                <div class="text-section">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum sed veritatis qui culpa sint consequatur voluptatem
+                        veniam minima numquam vero vel, quas doloribus quibusdam autem
+                        corrupti. Voluptatem fugit quaerat nulla? Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Voluptatum sed veritatis qui
+                        culpa sint consequatur voluptatem veniam minima numquam vero vel,
+                        quas doloribus
+                        <a href="#">Leer más</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Tercer artículo -->
+        <article class="article3">
+            <div class="inside-article">
+
+                <!-- Título -->
+                <div class="titulo-section">
+                    <h2>Gafas inteligentes reemplazan al móvil</h2>
+                </div>
+
+                <!-- Imagen -->
+                <div class="img-section">
+                    <img src="../src/img/img_seccion1.jpg"
+                        alt="imagen" />
+                </div>
+
+                <!-- Texto -->
+                <div class="text-section">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum sed veritatis qui culpa sint consequatur voluptatem
+                        veniam minima numquam vero vel, quas doloribus quibusdam autem
+                        corrupti. Voluptatem fugit quaerat nulla? Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Voluptatum sed veritatis qui
+                        culpa sint consequatur voluptatem veniam minima numquam vero vel,
+                        quas doloribus.
+                        <br>
+                        <a href="#">Leer más</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+    </aside>
+
+    <!-- Footer | Formado por tres seccciones: (Opciones del navegador / Logo / Iconos de RRSS) -->
+    <footer class="footer">
+
+        <!-- Opciones del navegador -->
+        <div class="f-1">
+            <ul>
+                <li>
+                    <a class="resaltado" href="#">IR ARRIBA</a>
+                </li>
+                <li>
+                    <a href="../pages/quienes_somos.html">Quienes somos</a>
+                </li>
+                <li>
+                    <a href="../pages/area_actuacion.html">Área de actuación</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Logo -->
+        <div class="f-2">
+            <img src="../src/img/creative-computer-logo-template/6370560.jpg" alt="mi logo">
+            <p>© 2025 Adrian Ramses. Todos los derechos reservados.</p>
+        </div>
+
+        <!-- Iconos RRSS -->
+        <div class="f-3">
+            <img id="intagram" src="../src/img/2111463.png" alt="intagram">
+            <img id="facebook" src="../src/img/facebook_4494475.png" alt="facebook">
+            <img id="whasapp" src="../src/img/whatsapp_4494495.png" alt="whatsapp">
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
