@@ -149,14 +149,15 @@
         justify-content: space-around;
         gap: 10px;
         word-wrap: break-word;
-        }
+    }
+
     ul{
         padding: 0;
         margin: 0;
     }
+
     img{
         width: 10px;
-        border:solid red;
     }
 
     .img-section-main img{
@@ -165,7 +166,11 @@
         display:block;
     }
 
-
-
-    
+    .footer .f-3{
+        grid-area: f-3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+    }
 }
