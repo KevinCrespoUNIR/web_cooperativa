@@ -3,6 +3,7 @@
 
     p{
         text-align: justify !important;
+        margin:auto;
     }
 
     /* GRID DEL BODY Y CSS DEL BODY*/
@@ -157,4 +158,14 @@
         width: 10px;
         border:solid red;
     }
+
+    .img-section-main img{
+        width: 100%;
+        margin: auto auto;
+        display:block;
+    }
+
+
+
+    
 }
