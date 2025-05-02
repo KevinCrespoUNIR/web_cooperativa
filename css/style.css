@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+/*PALETA DE COLOR DE LA WEB 
+COLOR1: #A7E4F2
+COLOR2: #48B0D9
+COLOR3: #176FA6
+COLOR4: #023859
+COLOR5: #011526
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* BODY */
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1.15rem !important;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #0f455d;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 75% 25% ;
+    grid-template-rows: 300px 70px 1fr 200px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+}
+
+/* HEADER */
+.header{
+    background-color: #060B0E;
+    background-image: url("../src/img/paul-volkmer-fX-qWsXl5x8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "sec2-header sec1-header";
+}
+.header{
+    grid-area: header;
+}
+.sec1-header{
+    grid-area:sec1-header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.sec2-header{
+    grid-area:sec2-header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.sec2-header p{
+    font-style: italic;
+}
+
+.header h1{
+    font-family: "Homenaje", sans-serif;
+    /*font-weight: 1000;*/
+    font-style: normal;
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+    margin-top:30px;
+}
+.header h2{
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+}
+.header p{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color:#A7E4F2;
+}
+.header img{
+    object-fit: contain;
+    width: 100% !important;
+    height: 80%;
+}
+
+/* BARRA NAVEGADOR */
+.nav{
+    margin: 0;
+    padding: 0;
+    grid-area: nav;
+}
+.nav ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#A7E4F2;
+    color: #011526;
+}
+.nav ul li{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #011526;
+}
+.nav ul li.lugarActivo{
+    background-color: #011526;
+    color: #48B0D9;
+}
+.nav ul li.lugarActivo a:hover{
+    background-color: #011526;
+    color: #48B0D9;
+}
+.nav ul li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    justify-content: center;
+    font-family: "Homenaje", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+}
+.nav ul li a:hover{
+    /*background-color: rgb(95, 148, 171);*/
+    background-color: #48B0D9;
+    transition: 0.5s all ease-out;
+}
+.nav ul li:hover > ul{
+    display: block;
+    /*background-color: rgb(95, 148, 171);*/
+    background-color: #48B0D9;
+}
+.nav ul li ul{
+    display: none;
+    position: relative;
+}
+.nav ul li ul li{
+    /*background-color: rgb(39, 111, 142);*/
+        background-color: #48B0D9;
+}
+.nav ul li ul li a:hover{
+    /*background-color: rgb(3#A7E4F29, 111, 142);*/
+        background-color: #A7E4F2;
+}
+/* INICIO HOME */
+.home .article{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "titulo-section titulo-section"
+    "img-section-main img-section-main"
+    "text-section text-section";
+}
+.main{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto auto auto;
+    grid-template-areas: 
+    "section1"
+    "section2"
+    "section3";
+    background-color: #023859;
+}
+.main section{
+    padding:5px;
+}
+.main .section1{
+    grid-area: section1;
+}
+.main .section2{
+    grid-area: section2;
+}
+.main .section3{
+    grid-area: section3;
+}
+.img-section-main{
+    grid-area: img-section-main;
+    padding-top:20px;
+    padding-bottom:25px;
+}
+.img-section-main img{
+    width: 700px;
+    margin: auto auto;
+    display:block;
+}
+
+/* QUINES SOMOS */
+.quienes .main {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+    grid-template-areas: 
+    "section1"!important;
+}
+
+/* ÁREA DE ACTUACIÓN */
+.area .contenedor-servicios{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:80px;
+}
+.servicio h2{
+    font-size:40px;
+}
+.servicio img{
+    width: 600px;
+    height: auto;
+    margin-top:15px;
+}
+.servicio p{
+    margin: 10px auto 0px auto;
+    width: 50%;
+    text-align: left;
+}
+
+/* Formulario Contacto */
+form{
+    width: 100%;
+    max-width: max-content;
+    height: auto;
+}  
+fieldset{
+    text-align: left;
+    padding: 20px;
+    background-color:#A7E4F2;
+    color: #011526;
+    margin-top: 30px;
+}
+
+legend{    
+    font-family: "Homenaje", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    background-color: white;
+
+}
+.div-input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+}
+.div-input2{
+    display: flex;
+    text-align: left;
+    width: auto;
+}
+.div-input3{
+    display: flex;
+    width: 100%;
+}
+
+/* ASIDE */
+.aside{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    gap:50px;
+    /*background-color: #276f8e;*/
+    background-color: #176FA6;
+}
+.aside article{
+    margin: 30px;
+  
+}
+.aside .img-section{
+    padding:10px 10px 5px 10px;
+}
+.aside .img-section img{
+    width: 100%;
+}
+.aside .text-section p{
+    width: 100%;
+    margin: auto 15px auto 15px;
+}
+.aside .text-section p a{
+    border-radius: 2px;
+    padding: 0px 5px 0px 5px;
+    font-weight: bold;
+    color: rgb(255, 255, 0);
+}
+
+/* FOOTER*/
+.footer{
+    display: grid;
+    grid-template-columns: 30% 40% 30% ;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "f-1 f-2 f-3";
+    padding: 10px;
+    background-color: #060B0E;
+}
+.footer{
+    grid-area: footer;
+}
+.footer .f-1{
+    grid-area: f-1;
+}
+.f-1 ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.f-1 ul li{
+    width: 100%;
+    height: 100%;
+}
+.f-1 ul li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+.footer .f-2{
+    grid-area: f-2;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.footer .f-3{
+    grid-area: f-3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .f-3 a{
+font-size: 80px;
+color: white;
+margin: 0 auto;
+}
+
+.footer .f-2 img{
+    width: 12vh;
+}
+.footer .f-3 img{
+    width: 10vh;
+}
+.footer .f-2 p{
+    padding-top:8px;
+}
+.resaltado{
+    color: rgb(120, 219, 255) !important;
+    justify-content: start;
+} 
+
+/* ARTÍCULOS */
+.article{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto  auto;
+    grid-template-areas: 
+    "titulo-section titulo-section"
+    "text-section text-section";
+}
+
+/* TITULOS */
+.titulo-section{
+    grid-area: titulo-section;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* TEXTOS */
+.text-section{
+    grid-area: text-section;
+    display: flex;
+    margin: 0 auto;
+    text-align:justify;
+    width: 70%;
+}
